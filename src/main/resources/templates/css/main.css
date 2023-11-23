@@ -200,6 +200,10 @@ header .btn-group .sign-in {
     margin-right: 4px;
 }
 
+header .btn-group .sign-up {
+    margin-right: 4px;
+}
+
 #search-form {
     order: 1;
     margin-right: 12px;
@@ -282,14 +286,13 @@ header .sub-menu li a:hover {
 }
 
 /* POST */
-
-.section--posting {
+.section--post {
     padding: 30px 0;
     background: #f0f2f5;
 }
 
-#post-form {
-    width: 600px;
+.post {
+    width: 500px;
     padding: 20px;
     margin: 0 auto;
     background: #fff;
@@ -297,16 +300,77 @@ header .sub-menu li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
 }
 
-#post-form li {
+.post ul li:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post ul li:nth-child(1) img {
+    width: 40px;
+    height: 40px;
+}
+
+.post ul li:nth-child(1) span {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.post li h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 15px 0 15px 0;
+    line-height: 1.5em;
+}
+
+.post li .photo {
+    display: block;
+    width: 500px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+.post li p {
+    display: block;
+    width: 500px;
+    min-height: 200px;
+    font-size: 16px;
+    padding: 25px 0;
+    line-height: 1.5em;
+}
+
+/* POSTING */
+
+.section--posting {
+    padding: 30px 0;
+    background: #f0f2f5;
+}
+
+#posting-form {
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
+}
+
+#posting-form li {
     margin-bottom: 15px;
 }
 
-#post-form li input {
+#posting-form li input {
     width: 100%;
 
 }
 
-#post-form li textarea {
+#posting-form li textarea {
     /* textarea는 body 태크에 상속 안된다고 함 */
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -321,13 +385,13 @@ header .sub-menu li a:hover {
     resize: none;
 }
 
-#post-form li textarea:focus {
+#posting-form li textarea:focus {
     border-color: #51a7e8;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
         0 0 5px rgba(81, 167, 232, 0.5);
 }
 
-#post-form li .btn {
+#posting-form li .btn {
     width: 100%;
     height: 62px;
     padding: 0 25px;
@@ -335,7 +399,138 @@ header .sub-menu li a:hover {
     justify-content: center;
 }
 
-/*FOOTER*/
+/* USER INFO */
+.section--userinfo {
+    padding: 30px 0;
+    background: #f0f2f5;
+}
+
+.userinfo {
+    width: 340px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.userinfo li {
+    margin: 15px 0;
+}
+
+.userinfo h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #c6c6c6;
+    padding-bottom: 10px;
+}
+
+.userinfo h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.userinfo p {
+    font-size: 16px;
+    margin: 15px 0 30px 0;
+    line-height: 1.5em;
+}
+
+.userinfo img {
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+}
+
+.userinfo li button {
+    width: 100%;
+    height: 62px;
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+
+/* USER UPDATE*/
+.section--updateuser {
+    padding: 30px 0;
+    background: #f0f2f5;
+}
+
+#update-form {
+    /* width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23); */
+    width: 340px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#update-form h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #c6c6c6;
+    padding-bottom: 10px;
+}
+
+#update-form h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#update-form li {
+    margin: 20px 0;
+}
+
+#update-form li input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#update-form li textarea {
+    /* textarea는 body 태크에 상속 안된다고 함 */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    font-size: 16px;
+    resize: none;
+}
+
+#update-form li textarea:focus {
+    border-color: #51a7e8;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
+        0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+#update-form li .btn {
+    width: 100%;
+    height: 62px;
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+
+
+/* FOOTER */
 footer {}
 
 footer .inner {

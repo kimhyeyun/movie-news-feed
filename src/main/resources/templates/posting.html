@@ -53,13 +53,13 @@
                     <div class="logo">
                         <a href="#">출발 비디오</a>
                     </div>
+                    <ul class="main-menu">
+                    </ul>
                 </div>
 
                 <div class="sign-group float--right">
                     <div class="btn-group">
                         <!-- inline 요소를 두개 이상 만들게되면 줄바꿈을 할 때 띄어쓰기 하나로 인식을 한다 -->
-                        <a href="#" class="btn sign-in">로그인</a>
-                        <a href="#" class="btn btn--primary sign-up">회원가입</a>
                         <a href="#" class="btn btn--primary posting">글쓰기</a>
                     </div>
                     <form id="search-form" method="GET" action="">
@@ -75,71 +75,20 @@
             </div>
         </header>
 
-        <!-- POST VIEW -->
-        <section class="section section--container">
-            <div class="inner ">
-                <div class="postbox">
-                    <div class="top">
-                        <a href="#" class="profile">img</a>
-                        <a href="#" class="id">아이디</a>
-                    </div>
-                    <div class="middle">
-                        <a class="thumbnail" href="">thumbnail</a>
-                    </div>
-                    <div class="bottom">
-                        <p>제목 혹은 내용이 들어갈 공간</p>
-                    </div>
-                </div>
-                <div class="postbox">
-                    <div class="top">
-                        <a href="#" class="profile">img</a>
-                        <a href="#" class="id">아이디</a>
-                    </div>
-                    <div class="middle">
-                        <a class="thumbnail" href="">thumbnail</a>
-                    </div>
-                    <div class="bottom">
-                        <p>제목 혹은 내용이 들어갈 공간</p>
-                    </div>
-                </div>
-                <div class="postbox">
-                    <div class="top">
-                        <a href="#" class="profile">img</a>
-                        <a href="#" class="id">아이디</a>
-                    </div>
-                    <div class="middle">
-                        <a class="thumbnail" href="">thumbnail</a>
-                    </div>
-                    <div class="bottom">
-                        <p>제목 혹은 내용이 들어갈 공간</p>
-                    </div>
-                </div>
-                <div class="postbox">
-                    <div class="top">
-                        <a href="#" class="profile">img</a>
-                        <a href="#" class="id">아이디</a>
-                    </div>
-                    <div class="middle">
-                        <a class="thumbnail" href="">thumbnail</a>
-                    </div>
-                    <div class="bottom">
-                        <p>제목 혹은 내용이 들어갈 공간</p>
-                    </div>
-                </div>
-                <div class="postbox">
-                    <div class="top">
-                        <a href="#" class="profile">img</a>
-                        <a href="#" class="id">아이디</a>
-                    </div>
-                    <div class="middle">
-                        <a class="thumbnail" href="">thumbnail</a>
-                    </div>
-                    <div class="bottom">
-                        <p>제목 혹은 내용이 들어갈 공간</p>
-                    </div>
-                </div>
+        <!-- POSTING -->
+        <section class="section section--posting">
+            <div class="inner">
+                <form id="posting-form" method="POST" action="">
+                    <ul>
+                        <li><input type="text" class="input--text" placeholder="제목" required></li>
+                        <!-- <li><input type="text" class="input--text" placeholder="공유할 내용을 적어주세요"></li> -->
+                        <li><textarea name="" id="" cols="30" rows="10" placeholder="공유할 내용을 적어주세요" required></textarea></li>
+                        <li><input type="file" class="input--file" placeholder="이미지"></li>
+                        <li><button type="text" class="btn btn--primary">게시하기</button></li>
+                    </ul>
+                </form>
             </div>
-        </section>
+        </section>        
 
         <!-- FOOTER -->
         <footer class="section">
