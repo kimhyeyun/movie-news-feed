@@ -1,5 +1,6 @@
-package com.example.movienewsfeed.entity;
+package com.example.movienewsfeed.user;
 
+import com.example.movienewsfeed.entity.Post;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -25,11 +26,13 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @Column(nullable = false)
-    private String name;
-
-    private String introduction;
+//    private String introduction;
 
     @OneToMany(mappedBy = "user")
     private List<Post> postList = new ArrayList<>();
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 }
