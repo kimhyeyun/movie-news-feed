@@ -300,6 +300,10 @@ header .sub-menu li a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
 }
 
+.post img {
+    margin-right: 10px; 
+}
+
 .post ul li:nth-child(1) {
     display: flex;
     justify-content: center;
@@ -352,6 +356,13 @@ header .sub-menu li a:hover {
     background: #f0f2f5;
 }
 
+#posting-form h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 #posting-form {
     width: 500px;
     padding: 20px;
@@ -367,7 +378,6 @@ header .sub-menu li a:hover {
 
 #posting-form li input {
     width: 100%;
-
 }
 
 #posting-form li textarea {
