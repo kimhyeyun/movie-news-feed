@@ -1,5 +1,6 @@
 package com.example.movienewsfeed.entity;
 
+import com.example.movienewsfeed.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
