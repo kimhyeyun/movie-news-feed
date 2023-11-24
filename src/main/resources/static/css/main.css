@@ -101,7 +101,7 @@ a {
 /* INPUT TEXT */
 .input--text {
     height: 34px;
-    padding: 0px 10px;
+    padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -127,10 +127,6 @@ a {
 
 /*Vendor Prefix (브라우저 업체별 접두사)*/
 .input--text::-ms-input-placeholder {
-    color: #cacaca;
-}
-
-.input--text::-moz-input-placeholder {
     color: #cacaca;
 }
 
@@ -428,6 +424,12 @@ header .sub-menu li a:hover {
     margin: 15px 0;
 }
 
+.userinfo li:last-child {
+    position: relative;
+    height: 62px;
+    background: #2A52BE linear-gradient(#607cca, #2047b5);
+}
+
 .userinfo h1 {
     font-size: 24px;
     font-weight: 600;
@@ -455,15 +457,33 @@ header .sub-menu li a:hover {
     border-radius: 70%;
 }
 
-.userinfo li button {
+.userinfo li a {
+    display: inline-flex;
     width: 100%;
     height: 62px;
     padding: 0 25px;
     font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    box-sizing: border-box;
+    align-items: center;
     justify-content: center;
+    border: 1px solid #2A52BE;
+    border-radius: 4px;
+    color: #fff;
+    background: #2A52BE linear-gradient(#607cca, #2047b5);
+    cursor: pointer;
 }
 
-
+.userinfo li a:hover {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07);
+}
 
 /* USER UPDATE*/
 .section--updateuser {

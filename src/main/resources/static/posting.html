@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>영화 속 세계로 떠나는 여정, 출발 비디오</title>
+
+    <meta name="author" content="Team 2">
+    <meta name="description" content="Movie news feed">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 가로 넓이 : 기기의 가로 넓이 사용, 초기 화면 배율 : 1, 확대 사용 : X, 최대 확대,축소 배율 : 1 -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="출발 비디오">
+    <meta property="og:title" content="출발 비디오">
+    <meta property="og:description" content="영화 속 세계로 떠나는 여정, 출발 비디오 - 최신 영화 소식과 정보를 만나보세요.">
+    <meta property="og:image" content="img/movie-img.jpg">
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="출발 비디오">
+    <meta property="twitter:title" content="출발 비디오">
+    <meta property="twitter:description" content="영화 속 세계로 떠나는 여정, 출발 비디오 - 최신 영화 소식과 정보를 만나보세요.">
+    <meta property="twitter:image" content="img/movie-img.jpg">
+
+    <!-- 기본적으로 인터넷 익스플로러 브라우저는 이 코드가 명시되어 있지 않으면 루트 경로에 ico파일이 존재할시 알아서 가져다 사용한다 -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" href="favicon.png">
+    <!-- 스마트폰에서도 제공할 때 필요 -->
+    <link rel="apple-touch-icon" href="favicon.png">
+    <!-- 구글 폰트 적용 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- reset 링크는 반드시 main.css 위에 두기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- body 태그를 대신해서 사용할 body__container 생성 -->
+    <div class="body__container">
+
+        <!-- HEADER -->
+        <header class="section">
+            <div class="inner">
+
+                <div class="menu-group float--left">
+                    <div class="logo">
+                        <a href="index.html">출발 비디오</a>
+                    </div>
+                    <ul class="main-menu">
+                    </ul>
+                </div>
+
+                <div class="sign-group float--right">
+                    <div class="btn-group">
+                        <!-- inline 요소를 두개 이상 만들게되면 줄바꿈을 할 때 띄어쓰기 하나로 인식을 한다 -->
+                        <a href="posting.html" class="btn btn--primary posting">글쓰기</a>
+                    </div>
+                    <form id="search-form" method="GET" action="">
+                        <input type="text" id="search" class="input--text" placeholder="검색어를 입력해 주세요.">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="user-info.html">이름 표시될 공간</a></li>
+                        <li><a href="#">로그아웃</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- POSTING -->
+        <section class="section section--posting">
+            <div class="inner">
+                <form id="posting-form" method="POST" action="">
+                    <ul>
+                        <h1>글쓰기</h1>
+                        <li><input type="text" class="input--text" placeholder="제목" required></li>
+                        <!-- <li><input type="text" class="input--text" placeholder="공유할 내용을 적어주세요"></li> -->
+                        <li><textarea name="" id="" cols="30" rows="10" placeholder="공유할 내용을 적어주세요" required></textarea></li>
+                        <li><input type="file" class="input--file" placeholder="이미지"></li>
+                        <li><button type="text" class="btn btn--primary">게시하기</button></li>
+                    </ul>
+                </form>
+            </div>
+        </section>        
+
+        <!-- FOOTER -->
+        <footer class="section">
+            <div class="inner clearfix">
+
+                <ul class="site-links float--right">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+
+                <ul class="site-links float--left">
+                    <li>출발 비디오</li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+
+                <a href="index.html" class="logo">출발 비디오</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>

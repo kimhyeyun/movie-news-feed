@@ -101,7 +101,7 @@ a {
 /* INPUT TEXT */
 .input--text {
     height: 34px;
-    padding: 0px 10px;
+    padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
@@ -127,10 +127,6 @@ a {
 
 /*Vendor Prefix (브라우저 업체별 접두사)*/
 .input--text::-ms-input-placeholder {
-    color: #cacaca;
-}
-
-.input--text::-moz-input-placeholder {
     color: #cacaca;
 }
 
@@ -259,7 +255,6 @@ header .sub-menu li a:hover {
 }
 
 .section--visual .summary__title {
-    color: #fff;
     font-size: 54px;
     font-weight: 500;
     color: #5cffd1;
@@ -288,7 +283,37 @@ header .sub-menu li a:hover {
 }
 
 #sign-form li:last-child {
-    margin-bottom: 0;
+    position: relative;
+    height: 62px;
+    background: #2A52BE linear-gradient(#607cca, #2047b5);
+}
+
+#sign-form li a {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #2A52BE;
+    color: #fff;
+    background: #2A52BE linear-gradient(#607cca, #2047b5);
+    padding: 0 25px;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#sign-form li a:hover {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07);
 }
 
 #sign-form .input--text {
