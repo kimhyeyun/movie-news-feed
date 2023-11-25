@@ -1,7 +1,9 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.controller;
 
-import com.example.movienewsfeed.CommonResponseDto;
+import com.example.movienewsfeed.dto.CommonResponseDto;
 import com.example.movienewsfeed.jwt.JwtUtil;
+import com.example.movienewsfeed.dto.UserRequestDto;
+import com.example.movienewsfeed.service.UserService;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

@@ -1,5 +1,8 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.service;
 
+import com.example.movienewsfeed.dto.UserRequestDto;
+import com.example.movienewsfeed.entity.User;
+import com.example.movienewsfeed.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

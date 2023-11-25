@@ -1,4 +1,4 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.entity;
 
 import com.example.movienewsfeed.entity.Post;
 import jakarta.persistence.*;

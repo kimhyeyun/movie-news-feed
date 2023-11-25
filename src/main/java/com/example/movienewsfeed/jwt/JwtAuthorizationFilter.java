@@ -1,6 +1,6 @@
 package com.example.movienewsfeed.jwt;
 
-import com.example.movienewsfeed.CommonResponseDto;
+import com.example.movienewsfeed.dto.CommonResponseDto;
 import com.example.movienewsfeed.user.UserDetailsImpl;
 import com.example.movienewsfeed.user.UserDetailsService;
 import com.fasterxml.jackson.databind.ObjectMapper;

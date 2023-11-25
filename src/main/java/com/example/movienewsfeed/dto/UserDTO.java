@@ -1,5 +1,6 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.dto;
 
+import com.example.movienewsfeed.entity.User;
 import lombok.Getter;
 import lombok.Setter;
 
