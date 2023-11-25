@@ -1,6 +1,5 @@
 package com.example.movienewsfeed.entity;
 
-import com.example.movienewsfeed.dto.PostRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,16 +22,4 @@ public class Post extends BaseTimeEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "username", nullable = false)
     private User user;
-
-    public Post(PostRequestDto requestDto) {
-        this.title = requestDto.getTitle();
-        this.content = requestDto.getContent();
-        this.thumbnail = requestDto.getThumbnail();
-    }
-
-    public void update(PostRequestDto requestDto) {
-        this.title = requestDto.getTitle();
-        this.content = requestDto.getContent();
-        this.thumbnail = requestDto.getThumbnail();
-    }
 }
