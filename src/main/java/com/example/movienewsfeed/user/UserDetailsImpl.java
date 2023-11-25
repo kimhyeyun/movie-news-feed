@@ -1,5 +1,6 @@
 package com.example.movienewsfeed.user;
 
+import com.example.movienewsfeed.entity.User;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

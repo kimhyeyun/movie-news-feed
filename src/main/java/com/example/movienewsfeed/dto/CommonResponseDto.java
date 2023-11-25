@@ -1,4 +1,4 @@
-package com.example.movienewsfeed;
+package com.example.movienewsfeed.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

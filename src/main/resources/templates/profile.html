@@ -8,15 +8,15 @@
 <body>
   <div class="container">
 
-    <div class="row mt-5 justify-content-center">
+    <div class="row mt-5 justify-content-center" th:object="${user}">
       <div class="col-8">
-        <h1 class="display-4  mb-5">ID</h1>
-        <p class="lead mb-5">이름 </p>
-        <p class="lead mb-5">
+        <h1 class="display-4  mb-5" th:text="${user.getUsername()}">ID</h1>
+        <p class="lead mb-5" th:if="${#strings.isEmpty(user.getIntroduction())}">
           한 줄 소개를 추가하세요.
         </p>
+        <p class="lead mb-5" th:if="${!#strings.isEmpty(user.getIntroduction())}" th:text="${user.getIntroduction()}"></p>
         <div>
-          <a class="btn btn-outline-primary" href="#" th:href="@{/api/profile/form}">프로필 수정</a>
+          <a class="btn btn-outline-primary" href="#" th:href="@{/api/profile/form}" th:if="${isOwner}">프로필 수정</a>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.repository;
 
+import com.example.movienewsfeed.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

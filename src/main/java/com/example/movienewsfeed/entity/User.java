@@ -1,6 +1,6 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.entity;
 
-import com.example.movienewsfeed.entity.Post;
+import com.example.movienewsfeed.dto.ProfileRequestDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,13 +26,21 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-//    private String introduction;
+    private String introduction;
 
     @OneToMany(mappedBy = "user")
     private List<Post> postList = new ArrayList<>();
 
     public User(String username, String password) {
         this.username = username;
+        this.password = password;
+    }
+
+    public void updateIntroduction(ProfileRequestDto requestDto) {
+        this.introduction = requestDto.getIntroduction();
+    }
+
+    public void updatePassword(String password) {
         this.password = password;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.movienewsfeed.user;
+package com.example.movienewsfeed.dto;
 
 import lombok.Getter;
 import lombok.Setter;
