@@ -281,6 +281,45 @@ header .sub-menu li a:hover {
     display: block;
 }
 
+/* POSTS */
+.section--posts .tiles {
+    background: #f0f2f5;
+}
+
+.section--posts .tiles .inner {
+    max-width: 1200px;
+}
+
+.section--posts .tiles ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section--posts .tiles li {
+    padding: 34px 24px;
+    text-align: center;
+    line-height: 1.5;
+    border-right: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+
+.section--posts .tiles li img {
+    max-width: 100%;
+    padding: 14px 10% 24px;
+    box-sizing: border-box;
+}
+
+.section--posts .tiles li h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section--posts .tiles li p {
+    font-size: 14px;
+    color: #767676;
+}
+
 /* POST */
 .section--post {
     padding: 30px 0;
